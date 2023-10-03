@@ -1,51 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Gabarito&family=Gruppo&family=Jost&family=Lato&family=Montserrat:wght@500&family=Oswald:wght@300&family=Pacifico&family=Poppins&family=Quicksand&family=Roboto&family=Teko:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bakbak+One&family=Gabarito&family=Gruppo&family=Jost&family=Lato&family=Montserrat:wght@500&family=Oswald:wght@300&family=Pacifico&family=Poppins&family=Quicksand&family=Roboto&family=Teko:wght@500&display=swap");
 
 /* Resetting some default styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 /* Navbar Section */
 .navbar {
-    background-color: #007BFF;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	background-color: #007bff;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
 }
 
 .logo {
-    font-size: 40px;
-    font-family: 'Gabarito', cursive;
-    padding: 0px 25px;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+	font-size: 40px;
+	font-family: "Gabarito", cursive;
+	padding: 0px 25px;
+	color: #fff;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .navbar-list {
-    list-style: none;
-    display: flex;
+	list-style: none;
+	display: flex;
 }
 
 .navbar-list-item {
-    font-size: 18px;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: color 0.3s;
+	font-size: 18px;
+	padding: 10px 20px;
+	cursor: pointer;
+	transition: color 0.3s;
 }
 .navbar-list-item a {
-    text-decoration: none;
-    color: #fff; /* Change link color to white */
-    transition: color 0.3s; /* Add smooth color transition */
+	text-decoration: none;
+	color: #fff; /* Change link color to white */
+	transition: color 0.3s; /* Add smooth color transition */
 }
 
-
 .navbar a {
-    text-decoration: none;
-    color: black;
+	text-decoration: none;
+	color: black;
 }
 
 /* Additional styles for the "Contributors" link
@@ -54,230 +57,227 @@
 } */
 
 .navbar-list-item a:hover {
-    color: #ff9900;
+	color: #ff9900;
 }
 
 /* Hamburger menu icon */
 .menu-toggle {
-    display: none;
-    font-size: 24px;
-    color: #fff;
-    cursor: pointer;
+	display: none;
+	font-size: 24px;
+	color: #fff;
+	cursor: pointer;
 }
-
 
 /* Media query for responsive design */
 @media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
-    .navbar-list {
-        display: none;
-    }
+	.menu-toggle {
+		display: block;
+	}
+	.navbar-list {
+		display: none;
+	}
 }
 /*To make the card profile circular*/
 
 .card .img-sec img {
-    border-radius: 50%;
+	border-radius: 50%;
 }
-
-
 
 /* Body Section */
 
-.container-1{
-    height: 100vh;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.container-1 {
+	width: 100%;
+	background-color: rgb(255, 255, 255);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 80px;
 }
 
-.main-logo{
-    font-family: 'Lato', cursive;
-    font-size: 120px;
+.main-logo {
+	font-family: "Lato", cursive;
+	font-size: 120px;
 }
 
-.explore-btn{
-    height: 50px;
-    width: 300px;
-    margin: 40px 0px;
-    border: 1px solid black;
-    font-size: 20px;
-    font-family: 'Gabarito', cursive;
-    background-color: transparent;
-    cursor: pointer;
-    transition: 0.2s;
+.explore-btn {
+	height: 50px;
+	width: 300px;
+	margin: 40px 0px;
+	border: 1px solid black;
+	font-size: 20px;
+	font-family: "Gabarito", cursive;
+	background-color: transparent;
+	cursor: pointer;
+	transition: 0.2s;
 }
 
-.explore-btn:hover{
-    width: 320px;
+.explore-btn:hover {
+	width: 320px;
 }
-
 
 /* Contributors Section */
 
-.container-2{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    overflow: hidden;
+.container-2 {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-wrap: wrap;
+	overflow: hidden;
 }
 
-#contri{
-    margin: 30px 0px;
-    font-size: 40px;
+#contri {
+	margin: 30px 0px;
+	font-size: 40px;
 }
 
-.hack{
-    font-size: 60px;
-    font-family: 'Teko', sans-serif;
+.hack {
+	font-size: 60px;
+	font-family: "Teko", sans-serif;
 }
 
-.people{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+.people {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 }
 
-.card{
-    height: 350px;
-    width: 300px;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 4px;
-    display: flex;
-    background-color: aliceblue;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.card {
+	height: 350px;
+	width: 300px;
+	margin: 20px;
+	border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 4px;
+	display: flex;
+	background-color: aliceblue;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-.info{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-.label{
-    margin: 5px 0px;
-    font-size: 25px;
-    font-family: 'Gabarito', cursive;
+.label {
+	margin: 5px 0px;
+	font-size: 25px;
+	font-family: "Gabarito", cursive;
 }
 
-.desc{
-    margin: 5px 0px;
-    font-size: 18px;
-    font-family: 'Lato', regular;
+.desc {
+	margin: 5px 0px;
+	font-size: 18px;
+	font-family: "Lato", regular;
 }
 
 /* Footer Section */
 
-.footer{
-    background-color: aliceblue;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.footer {
+	background-color: aliceblue;
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
-.first-footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.first-footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-#title, #clg{
-    font-family: 'Gabarito', cursive;
-    font-size: 20px;
+#title,
+#clg {
+	font-family: "Gabarito", cursive;
+	font-size: 20px;
 }
 
-#name{
-    font-family: 'Gabarito', cursive;
-    font-size: 35px;
+#name {
+	font-family: "Gabarito", cursive;
+	font-size: 35px;
 }
 
-.social-media{
-    display: flex;
-    margin: 25px 20px;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Gabarito', cursive;
+.social-media {
+	display: flex;
+	margin: 25px 20px;
+	justify-content: center;
+	align-items: center;
+	font-family: "Gabarito", cursive;
 }
 
-.media1{
-    margin: 0px 10px;
+.media1 {
+	margin: 0px 10px;
 }
 /* Efek Hover untuk Tombol Explore */
 .explore-btn {
-    background-color: #007BFF; /* Warna latar belakang saat normal */
-    color: #fff; /* Warna teks saat normal */
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s; /* Efek transisi selama 0.3 detik */
+	background-color: #007bff; /* Warna latar belakang saat normal */
+	color: #fff; /* Warna teks saat normal */
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s, color 0.3s; /* Efek transisi selama 0.3 detik */
 }
 
 .explore-btn:hover {
-    background-color: #0056b3; /* Warna latar belakang saat dihover */
-    color: #fff; /* Warna teks saat dihover (bisa disamakan dengan warna saat normal) */
+	background-color: #0056b3; /* Warna latar belakang saat dihover */
+	color: #fff; /* Warna teks saat dihover (bisa disamakan dengan warna saat normal) */
 }
 /* Animasi Fade-in */
 @keyframes fade-in {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
 .main-logo {
-    animation: fade-in 1s ease-in-out; /* Nama animasi, durasi, dan jenis percepatan */
+	animation: fade-in 1s ease-in-out; /* Nama animasi, durasi, dan jenis percepatan */
 }
 /* Efek Hover pada Card */
 .card:hover {
-    transform: translateY(-10px); /* Geser card ke atas saat dihover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan saat dihover */
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Efek transisi */
+	transform: translateY(-10px); /* Geser card ke atas saat dihover */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan saat dihover */
+	transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Efek transisi */
 }
 
 /* Efek Hover pada Label */
 .card:hover .label {
-    color: #007BFF; /* Ganti warna label saat dihover */
+	color: #007bff; /* Ganti warna label saat dihover */
 }
 
 /* Efek Hover pada Github Icon */
 .card:hover .github img {
-    filter: grayscale(0); /* Hilangkan efek grayscale pada gambar saat dihover */
+	filter: grayscale(0); /* Hilangkan efek grayscale pada gambar saat dihover */
 }
 /* Mobile navigation styles */
 .navbar-list.active {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    right: 0;
-    background-color: #007BFF; /* Match the navbar background color */
-    z-index: 1;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 60px;
+	left: 0;
+	right: 0;
+	background-color: #007bff; /* Match the navbar background color */
+	z-index: 1;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-list.active .navbar-list-item {
-    padding: 10px 20px;
-    text-align: center;
+	padding: 10px 20px;
+	text-align: center;
 }
 .navbar-list-item:hover {
-    background-color: #0056b3; /* Change background color on hover */
-    border-radius: 5px;
-    transition: background-color 0.3s;
+	background-color: #0056b3; /* Change background color on hover */
+	border-radius: 5px;
+	transition: background-color 0.3s;
 }
